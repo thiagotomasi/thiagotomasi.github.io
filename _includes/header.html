@@ -1,0 +1,14 @@
+<header id="header">
+  <a href="http://thiagottomasi.com/portfolio/" class="image avatar"><img src="{{ site.url }}images/avatar.jpg?123" alt="Thiago Tomasi photo profile" /></a>
+  <h1><strong>{{ site.author }}</strong><br>
+  {{ site.author_title }}</h2>
+  {% if page.layout == "page" %}
+  	<p><a href="{{ site.url }}" class="button special small">View all projects</a></p>
+  {% endif %}
+</header>
+
+<!-- {% for my_page in site.pages %}
+  {% if my_page.title %}
+  <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+  {% endif %}
+{% endfor %} -->
