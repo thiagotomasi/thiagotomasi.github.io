@@ -7,6 +7,7 @@ var cssnano     = require('gulp-cssnano');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var cp          = require('child_process');
+var sourcemaps  = require('gulp-sourcemaps');
 
 var messages = {
   jekyllDev: 'Running: $ jekyll build for dev',
@@ -49,11 +50,13 @@ gulp.task('jekyll-dev', function (done) {
 
 gulp.task('sass', function () {
   return gulp.src('_sass/main.scss')
+  .pipe(sourcemaps.init())
   .pipe(sass({
     includePaths: ['scss'],
     onError: browserSync.notify
   }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('_site/css'))
   .pipe(browserSync.reload({stream:true}))
   .pipe(gulp.dest('css'));
@@ -61,7 +64,9 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function() {
   return gulp.src(['_js/lib/*.js'])
+  .pipe(sourcemaps.init())
   .pipe(concat('scripts.js'))
+  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('_site/js'))
   .pipe(browserSync.reload({stream:true}))
   .pipe(gulp.dest('js'));
@@ -78,20 +83,24 @@ gulp.task('jekyll-prod', function (done) {
 
 gulp.task('sass-prod', function () {
   return gulp.src('_sass/main.scss')
+  .pipe(sourcemaps.init())
   .pipe(sass({
     includePaths: ['scss'],
     onError: browserSync.notify
   }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
   .pipe(cssnano())
+  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('_site/css'))
   .pipe(gulp.dest('css'));
 });
 
 gulp.task('scripts-prod', function() {
   return gulp.src(['_js/lib/*.js'])
+  .pipe(sourcemaps.init())
   .pipe(concat('scripts.js'))
   .pipe(uglify())
+  .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('_site/js'))
   .pipe(gulp.dest('js'));
 });
