@@ -8,6 +8,7 @@ var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var cp          = require('child_process');
 var sourcemaps  = require('gulp-sourcemaps');
+var imagemin    = require('gulp-imagemin');
 
 var messages = {
   jekyllDev: 'Running: $ jekyll build for dev',
@@ -18,6 +19,13 @@ var messages = {
 
 gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
   browserSync.reload();
+});
+
+
+gulp.task('image-compress', function () {
+    gulp.src('_images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('images'))
 });
 
 
@@ -36,6 +44,7 @@ gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-dev'], function() {
 gulp.task('watch', function () {
   gulp.watch(['_sass/**/*.scss','_sass/*.scss'], ['sass']);
   gulp.watch(['_js/**/*.js'], ['scripts']);
+  gulp.watch(['_images/*'], ['image-compress']);
   gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
 });
 
@@ -109,4 +118,4 @@ gulp.task('scripts-prod', function() {
 // MAIN TASKS
 
 gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('build', ['scripts-prod', 'sass-prod', 'jekyll-prod']);
+gulp.task('build', ['scripts-prod', 'sass-prod', 'image-compress', 'jekyll-prod']);
