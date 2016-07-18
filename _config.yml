@@ -4,7 +4,7 @@ author: Thiago Tomasi
 author_title: UX/UI Designer and Front-end Engineer
 email: alpaca.thiago@gmail.com
 baseurl: ""
-url: "https://www.thiagotomasi.com/"
+url: "http://www.thiagotomasi.com/"
 twitter_username:  thiagotomasi
 github_username:   thiagotomasi
 facebook_username: thiagotomasi
@@ -13,3 +13,10 @@ linkedin_username: thiagotomasi
 
 # Build settings
 markdown: kramdown
+
+
+exclude: [
+  "gulpfile.js",
+  "node_modules",
+  "package.json"
+]
