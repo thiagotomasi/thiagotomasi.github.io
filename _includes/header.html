@@ -1,8 +1,63 @@
-<header id="header">
-  <a href="http://thiagottomasi.com/portfolio/" class="image avatar"><img src="{{ site.url }}images/avatar.jpg?123" alt="Thiago Tomasi photo profile" /></a>
-  <h1><strong>{{ site.author }}</strong><br>
-  {{ site.author_title }}</h2>
-  {% if page.layout == "page" %}
-  	<p><a href="{{ site.url }}" class="button special small">View all projects</a></p>
-  {% endif %}
+<header class="header">
+	<nav class="menu main-menu">
+		<a href="/">Thiago Tomasi</a>
+		<a href="/portfolio/">Portifolio</a>
+		<a href="/about/">About</a>
+	</nav>
+	<nav class="menu main-menu menu-social-media mini">
+		{% if site.github_username %}
+			<a target="_blank" href="https://github.com/{{ site.github_username }}">
+				<img class="darker" src="{{ site.url }}images/icon-Github-dark.svg" alt="Github">
+				<img class="lighter" src="{{ site.url }}images/icon-Github-light.svg" alt="Github">
+			</a>
+		{% endif %}
+		{% if site.medium_username %}
+			<a target="_blank" href="https://medium.com/@{{ site.medium_username }}">
+				<img class="darker" src="{{ site.url }}images/icon-Medium-dark.svg" alt="Medium">
+				<img class="lighter" src="{{ site.url }}images/icon-Medium-light.svg" alt="Medium">
+			</a>
+		{% endif %}
+		{% if site.linkedin_username %}
+			<a target="_blank" href="https://br.linkedin.com/in/{{ site.linkedin_username }}">
+				<img class="darker" src="{{ site.url }}images/icon-LinkedIn-dark.svg" alt="Linkedin">
+				<img class="lighter" src="{{ site.url }}images/icon-LinkedIn-light.svg" alt="Linkedin">
+			</a>
+		{% endif %}
+		{% if site.twitter_username %}
+			<a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
+				<img class="darker" src="{{ site.url }}images/icon-Twitter-dark.svg" alt="Twitter">
+				<img class="lighter" src="{{ site.url }}images/icon-Twitter-light.svg" alt="Twitter">
+			</a>
+		{% endif %}
+		{% if site.instagram_username %}
+			<a target="_blank" href="http://instagram.com/{{ site.instagram_username }}/">
+				<img class="darker" src="{{ site.url }}images/icon-Instagram-dark.svg" alt="instagram">
+				<img class="lighter" src="{{ site.url }}images/icon-Instagram-light.svg" alt="instagram">
+			</a>
+		{% endif %}
+	</nav>
+	<nav class="menu main-menu">
+		{% if site.email %}
+			<a target="_blank" href="mailto:{{ site.email }}">{{ site.email }}</a>
+		{% endif %}
+	</nav>
 </header>
+
+<nav class="menu main-mobile">
+	<a href="/">
+		<span class="icon"><img src="{{ site.url }}images/icon-home.svg" alt=""></span>
+		<span class="label">Home</span>
+	</a>
+	<a href="/about/">
+		<span class="icon"><img src="{{ site.url }}images/icon-about.svg" alt=""></span>
+		<span class="label">About</span>
+	</a>
+	<a href="/portfolio/">
+		<span class="icon"><img src="{{ site.url }}images/icon-portifolio.svg" alt=""></span>
+		<span class="label">Portifolio</span>
+	</a>
+	<a href="/contact/">
+		<span class="icon"><img src="{{ site.url }}images/icon-contact.svg" alt=""></span>
+		<span class="label">Contact</span>
+	</a>
+</nav>

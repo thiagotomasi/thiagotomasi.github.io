@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
 /**
  * Reset some basic elements
@@ -15,16 +15,30 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+    // height: 100%;
+    // min-height: 100%;
+    background: $dark-color;
+
+    &.lighter {
+        background: $bright-color;
+    }
+}
+
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
+    color: $base-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    padding-bottom: 80px;
+
+    @include tablet {
+        padding-bottom: 0px;
+    }
 }
 
 
@@ -93,15 +107,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+    color: $base-color;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($base-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
+        color: $base-color;
         text-decoration: underline;
     }
 }
@@ -112,8 +125,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $base-color;
+    border-left: 4px solid $base-color;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -132,7 +145,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $base-color;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -150,4 +163,12 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+.margin-double {
+    margin-top: 80px;
+}
+
+.margin-double-bottom {
+    margin-bottom: 80px;
 }

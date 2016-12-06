@@ -1,7 +1,7 @@
 # Site settings
-title: Thiago Tomasi - UX/UI Designer and Front-end Engineer
+title: Thiago Tomasi - Product Design & Front-end Development
 author: Thiago Tomasi
-author_title: UX/UI Designer and Front-end Engineer
+author_title: Product Design & Front-end Development
 email: alpaca.thiago@gmail.com
 baseurl: ""
 url: "http://www.thiagotomasi.com/"
@@ -10,10 +10,10 @@ github_username:   thiagotomasi
 facebook_username: thiagotomasi
 medium_username:   thiagotomasi
 linkedin_username: thiagotomasi
+instagram_username: thiago.tomasi
 
 # Build settings
 markdown: kramdown
-
 
 exclude: [
   "gulpfile.js",

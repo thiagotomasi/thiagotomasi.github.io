@@ -1,0 +1,134 @@
+h1 {
+	font-size: $big-font-size;
+	font-weight: $black-font-weight;
+	line-height: 100%;
+	margin-bottom: 25px;
+
+	@include tablet {
+        font-size: $bigbig-font-size;
+	}
+
+	@include desktop {
+        font-size: $huge-font-size;
+	}
+
+	small {
+		font-size: $small-font-size;
+		font-weight: $light-font-weight;
+		text-transform: uppercase;
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 0;
+
+		@include tablet {
+			font-size: $base-font-size;
+			margin-top: -10px;
+			margin-bottom: -20px;
+		}
+
+		@include desktop {
+	        font-size: $base-font-size;
+	        margin-top: -20px;
+			margin-bottom: -30px;
+		}
+	}
+}
+
+h2 {
+	font-size: $bigsmall-font-size;
+	font-weight: $black-font-weight;
+	line-height: 130%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+
+	@include tablet {
+		font-size: $big-font-size;
+	}
+
+	@include desktop {
+        font-size: $big-font-size;
+	}
+}
+
+p {
+	font-size: $base-font-size;
+	font-weight: $light-font-weight;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	line-height: 150%;
+
+	@include tablet {
+		font-size: $base-font-size;
+		max-width: 100%;
+	}
+
+	@include desktop {
+        font-size: $base-font-size;
+	}
+
+	&.light {
+		opacity: .8;
+	}
+}
+
+small {
+	font-size: $small-font-size;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+  	content: '';
+	position: absolute;
+	top: 95%;
+	width: 99%;
+	border-bottom: 1px solid;
+	left: 0;
+  	z-index: -1;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+  }
+}
+
+h1,
+h2 {
+	a {
+		&::after {
+			top: 90%;
+		}
+	}
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+.content {
+	color: $dark-color;
+
+	a:not(.button) {
+		color: $dark-color;
+		text-shadow: 1px 0 $bright-color,2px 0 $bright-color,-1px 0 $bright-color,-2px 0 $bright-color;
+	}
+
+	&.content-dark {
+		color: $bright-color;
+
+		a:not(.button) {
+			color: $bright-color;
+			text-shadow: 1px 0 $dark-color,2px 0 $dark-color,-1px 0 $dark-color,-2px 0 $dark-color;
+		}
+	}
+}
+
+.conteiner-half-width {
+	.title {
+		@include tablet {
+	        margin-top: 15px;
+		}
+	}
+}

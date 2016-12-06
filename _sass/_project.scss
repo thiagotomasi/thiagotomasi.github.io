@@ -1,0 +1,38 @@
+.project {
+    text-align: left;
+    margin-bottom: 80px;
+
+    @include tablet {
+        margin-bottom: 120px;
+	}
+
+	@include desktop {
+        // padding: 80px;
+	}
+
+	.project-mockup {
+		background: none;
+		display: block;
+		text-shadow: none;
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.project-title {
+		margin-bottom: 20px;
+	}
+
+	p  {
+		max-width: 400px;
+	}
+}
+
+.conteiner {
+	.project {
+		&:last-child {
+			// margin-bottom: 0;
+		}
+	}
+}

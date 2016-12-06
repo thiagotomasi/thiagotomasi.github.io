@@ -1,0 +1,11 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	top: 40px;
+	left: 40px;
+	// display: none;
+
+	@include tablet {
+		// display: block;
+	}
+}

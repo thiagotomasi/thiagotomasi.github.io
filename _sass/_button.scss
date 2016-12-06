@@ -1,0 +1,53 @@
+button,
+.button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 13px 30px;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	background: $bright-color;
+	color: $base-color;
+	font-size: $base-font-size;
+	transition: all .5s;
+	text-decoration: none;
+
+	@include tablet {
+		font-size: $base-font-size;
+	}
+
+	@include desktop {
+		font-size: $base-font-size;
+		padding: 15px 40px;
+	}
+	
+	&:hover {
+		color: $bright-color;
+		background: $base-color;
+		text-decoration: none;
+	}
+
+	&::after {
+		display: none;
+	}
+}
+
+.content {
+
+	button,
+	.button {
+		color: $bright-color;
+		background: $dark-color;
+	}
+
+	&.content-dark {
+		color: $bright-color;
+
+		button,
+		.button {
+			color: $dark-color;
+			background: $bright-color;
+		}
+	}
+}

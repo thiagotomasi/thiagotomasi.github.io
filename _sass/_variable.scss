@@ -1,0 +1,29 @@
+// Our variables
+$base-font-family: 'Lato', sans-serif;
+$base-font-size:   16px;
+$huge-font-size:   $base-font-size * 5.15;
+$bigbig-font-size:  $base-font-size * 3.5;
+$big-font-size:  $base-font-size * 2;
+$bigsmall-font-size:  $base-font-size * 1.5;
+$small-font-size:  $base-font-size * 0.75;
+$smaller-font-size:  $base-font-size * 0.55;
+$base-line-height: 150%;
+$black-font-weight: 900;
+$bold-font-weight: 700;
+$base-font-weight: 400;
+$light-font-weight: 300;
+$thin-font-weight: 100;
+
+$spacing-unit:     30px;
+
+$base-color:      #111;
+$brighter-color:  #ccc;
+$bright-color:    #fff;
+$dark-color:      #000;
+
+// Width of the content area
+$content-width:    950px;
+
+// Break points
+$mb-tablet:    900px;
+$mb-desktop:   1200px;

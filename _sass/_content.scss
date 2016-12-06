@@ -1,0 +1,56 @@
+.content {
+	min-height: 98vh;
+	text-align: center;
+	background: $bright-color;
+	transition: all 9999s;
+	padding: 20px;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+    align-items: center; 
+    position: relative;
+
+    @include tablet {
+        padding: 60px 260px;
+	}
+
+	@include desktop {
+        padding: 80px 260px;
+	}
+
+	&.conteiner-half {
+		min-height: 62vh;
+
+		@include tablet {
+	        min-height: 58vh;
+		}
+	}
+
+	&.content-dark {
+		background: $dark-color;
+	}
+
+	&.content-home {
+		background-image: url('../images/background.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+.conteiner {
+	margin: 0 auto;
+	max-width: $content-width;
+}
+
+.conteiner-half-width {
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+
+	@include tablet {
+		width: 49%;
+		margin: 40px 0;
+	}
+}

@@ -1,0 +1,14 @@
+.footer {
+	color: $bright-color;
+	text-align: center;
+	padding: 15px;
+	display: none;
+
+	@include tablet {
+		display: block;
+    }
+
+	a {
+		color: $bright-color;
+	}
+}
