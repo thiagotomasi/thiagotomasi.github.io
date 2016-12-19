@@ -13,57 +13,57 @@ permalink: /portfolio/unity/
 	</section>
 	<section class="content">
 		<div class="conteiner">
-			<h2>The Project</h2>
+			<!-- <h2>The Project</h2> -->
 			<!-- <p><strong>Roles:</strong> UI Design and Front-End.</p> -->
 			<!-- <p>This project was made with Stylus, Cake and NodeJS</p> -->
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/Registration.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/Registration.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/ConfirmEmailAddress.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/ConfirmEmailAddress.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/EmailConfirmation.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/EmailConfirmation.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityDashboard.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityDashboard.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityCreatingProject.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityCreatingProject.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityProjectDashboard.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityProjectDashboard.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityAds.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityAds.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityAdsDashboard-Integration.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityAdsDashboard-Integration.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityAdsDashboard-Statistics.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityAdsDashboard-Statistics.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/UnityDashboardFilled.png" alt="" /></span></div>
+					<img src="{{ site.url }}images/UnityDashboardFilled.jpg" alt="" />
 				</div>
 			</div>
 			<!-- <p><a href="http://www.grendenekids.com.br" target="_blank" class="button special">View Website</a></p> -->
