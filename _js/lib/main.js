@@ -1,4 +1,112 @@
-// util.js
-!function(e){e.fn.navList=function(){var t=e(this);return $a=t.find("a"),b=[],$a.each(function(){var t=e(this),a=Math.max(0,t.parents("li").length-1),l=t.attr("href"),i=t.attr("target");b.push('<a class="link depth-'+a+'"'+("undefined"!=typeof i&&""!=i?' target="'+i+'"':"")+("undefined"!=typeof l&&""!=l?' href="'+l+'"':"")+'><span class="indent-'+a+'"></span>'+t.text()+"</a>")}),b.join("")},e.fn.panel=function(t){if(0==this.length)return i;if(this.length>1){for(var a=0;a<this.length;a++)e(this[a]).panel(t);return i}var l,i=e(this),n=e("body"),r=e(window),o=i.attr("id");return l=e.extend({delay:0,hideOnClick:!1,hideOnEscape:!1,hideOnSwipe:!1,resetScroll:!1,resetForms:!1,side:null,target:i,visibleClass:"visible"},t),"jQuery"!=typeof l.target&&(l.target=e(l.target)),i._hide=function(e){l.target.hasClass(l.visibleClass)&&(e&&(e.preventDefault(),e.stopPropagation()),l.target.removeClass(l.visibleClass),window.setTimeout(function(){l.resetScroll&&i.scrollTop(0),l.resetForms&&i.find("form").each(function(){this.reset()})},l.delay))},i.css("-ms-overflow-style","-ms-autohiding-scrollbar").css("-webkit-overflow-scrolling","touch"),l.hideOnClick&&(i.find("a").css("-webkit-tap-highlight-color","rgba(0,0,0,0)"),i.on("click","a",function(t){var a=e(this),n=a.attr("href"),r=a.attr("target");n&&"#"!=n&&""!=n&&n!="#"+o&&(t.preventDefault(),t.stopPropagation(),i._hide(),window.setTimeout(function(){"_blank"==r?window.open(n):window.location.href=n},l.delay+10))})),i.on("touchstart",function(e){i.touchPosX=e.originalEvent.touches[0].pageX,i.touchPosY=e.originalEvent.touches[0].pageY}),i.on("touchmove",function(e){if(null!==i.touchPosX&&null!==i.touchPosY){var t=i.touchPosX-e.originalEvent.touches[0].pageX,a=i.touchPosY-e.originalEvent.touches[0].pageY,n=i.outerHeight(),r=i.get(0).scrollHeight-i.scrollTop();if(l.hideOnSwipe){var o=!1,s=20,c=50;switch(l.side){case"left":o=s>a&&a>-1*s&&t>c;break;case"right":o=s>a&&a>-1*s&&-1*c>t;break;case"top":o=s>t&&t>-1*s&&a>c;break;case"bottom":o=s>t&&t>-1*s&&-1*c>a}if(o)return i.touchPosX=null,i.touchPosY=null,i._hide(),!1}(i.scrollTop()<0&&0>a||r>n-2&&n+2>r&&a>0)&&(e.preventDefault(),e.stopPropagation())}}),i.on("click touchend touchstart touchmove",function(e){e.stopPropagation()}),i.on("click",'a[href="#'+o+'"]',function(e){e.preventDefault(),e.stopPropagation(),l.target.removeClass(l.visibleClass)}),n.on("click touchend",function(e){i._hide(e)}),n.on("click",'a[href="#'+o+'"]',function(e){e.preventDefault(),e.stopPropagation(),l.target.toggleClass(l.visibleClass)}),l.hideOnEscape&&r.on("keydown",function(e){27==e.keyCode&&i._hide(e)}),i},e.fn.placeholder=function(){if("undefined"!=typeof document.createElement("input").placeholder)return e(this);if(0==this.length)return a;if(this.length>1){for(var t=0;t<this.length;t++)e(this[t]).placeholder();return a}var a=e(this);return a.find("input[type=text],textarea").each(function(){var t=e(this);(""==t.val()||t.val()==t.attr("placeholder"))&&t.addClass("polyfill-placeholder").val(t.attr("placeholder"))}).on("blur",function(){var t=e(this);t.attr("name").match(/-polyfill-field$/)||""==t.val()&&t.addClass("polyfill-placeholder").val(t.attr("placeholder"))}).on("focus",function(){var t=e(this);t.attr("name").match(/-polyfill-field$/)||t.val()==t.attr("placeholder")&&t.removeClass("polyfill-placeholder").val("")}),a.find("input[type=password]").each(function(){var t=e(this),a=e(e("<div>").append(t.clone()).remove().html().replace(/type="password"/i,'type="text"').replace(/type=password/i,"type=text"));""!=t.attr("id")&&a.attr("id",t.attr("id")+"-polyfill-field"),""!=t.attr("name")&&a.attr("name",t.attr("name")+"-polyfill-field"),a.addClass("polyfill-placeholder").val(a.attr("placeholder")).insertAfter(t),""==t.val()?t.hide():a.hide(),t.on("blur",function(e){e.preventDefault();var a=t.parent().find("input[name="+t.attr("name")+"-polyfill-field]");""==t.val()&&(t.hide(),a.show())}),a.on("focus",function(e){e.preventDefault();var t=a.parent().find("input[name="+a.attr("name").replace("-polyfill-field","")+"]");a.hide(),t.show().focus()}).on("keypress",function(e){e.preventDefault(),a.val("")})}),a.on("submit",function(){a.find("input[type=text],input[type=password],textarea").each(function(){var t=e(this);t.attr("name").match(/-polyfill-field$/)&&t.attr("name",""),t.val()==t.attr("placeholder")&&(t.removeClass("polyfill-placeholder"),t.val(""))})}).on("reset",function(t){t.preventDefault(),a.find("select").val(e("option:first").val()),a.find("input,textarea").each(function(){var t,a=e(this);switch(a.removeClass("polyfill-placeholder"),this.type){case"submit":case"reset":break;case"password":a.val(a.attr("defaultValue")),t=a.parent().find("input[name="+a.attr("name")+"-polyfill-field]"),""==a.val()?(a.hide(),t.show()):(a.show(),t.hide());break;case"checkbox":case"radio":a.attr("checked",a.attr("defaultValue"));break;case"text":case"textarea":a.val(a.attr("defaultValue")),""==a.val()&&(a.addClass("polyfill-placeholder"),a.val(a.attr("placeholder")));break;default:a.val(a.attr("defaultValue"))}})}),a},e.prioritize=function(t,a){var l="__prioritize";"jQuery"!=typeof t&&(t=e(t)),t.each(function(){var t,i=e(this),n=i.parent();if(0!=n.length)if(i.data(l)){if(a)return;t=i.data(l),i.insertAfter(t),i.removeData(l)}else{if(!a)return;if(t=i.prev(),0==t.length)return;i.prependTo(n),i.data(l,t)}})}}(jQuery);
-// main.js
-!function(a){var o={parallax:!0,parallaxFactor:20};skel.breakpoints({xlarge:"(max-width: 1800px)",large:"(max-width: 1280px)",medium:"(max-width: 980px)",small:"(max-width: 736px)",xsmall:"(max-width: 480px)"}),a(function(){var e=a(window),l=a("body"),t=a("#header");l.addClass("is-loading"),e.on("load",function(){l.removeClass("is-loading")}),skel.vars.mobile&&(l.addClass("is-touch"),window.setTimeout(function(){e.scrollTop(e.scrollTop()+1)},0)),a("form").placeholder(),skel.on("+medium -medium",function(){a.prioritize(".important\\28 medium\\29",skel.breakpoint("medium").active)}),("ie"==skel.vars.browser||skel.vars.mobile)&&(o.parallax=!1),o.parallax&&skel.on("change",function(){skel.breakpoint("medium").active?(e.off("scroll.strata_parallax"),t.css("background-position","top left, center center")):(t.css("background-position","left 0px"),e.on("scroll.strata_parallax",function(){t.css("background-position","left "+-1*(parseInt(e.scrollTop())/o.parallaxFactor)+"px")}))}),e.on("load",function(){a("#two").poptrox({caption:function(a){return a.next("h3").text()},overlayColor:"#2c2c2c",overlayOpacity:.85,popupCloserText:"",popupLoaderText:"",selector:".work-item a.image",usePopupCaption:!0,usePopupDefaultStyling:!1,usePopupEasyClose:!1,usePopupNav:!0,windowMargin:skel.breakpoint("small").active?0:50})})})}(jQuery);
+/* lazyload.js (c) Lorenzo Giuliani
+ * MIT License (http://www.opensource.org/licenses/mit-license.html)
+ *
+ * expects a list of:  
+ * `<img src="blank.gif" data-src="my_image.png" width="600" height="400" class="lazy">`
+ */
+
+!function(window){
+  var $q = function(q, res){
+        if (document.querySelectorAll) {
+          res = document.querySelectorAll(q);
+        } else {
+          var d=document
+            , a=d.styleSheets[0] || d.createStyleSheet();
+          a.addRule(q,'f:b');
+          for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)
+            l[b].currentStyle.f && c.push(l[b]);
+
+          a.removeRule(0);
+          res = c;
+        }
+        return res;
+      }
+    , addEventListener = function(evt, fn){
+        window.addEventListener
+          ? this.addEventListener(evt, fn, false)
+          : (window.attachEvent)
+            ? this.attachEvent('on' + evt, fn)
+            : this['on' + evt] = fn;
+      }
+    , _has = function(obj, key) {
+        return Object.prototype.hasOwnProperty.call(obj, key);
+      }
+    ;
+
+  function loadImage (el, fn) {
+    var img = new Image()
+      , src = el.getAttribute('data-src');
+    img.onload = function() {
+      if (!! el.parent)
+        el.parent.replaceChild(img, el)
+      else
+        el.src = src;
+
+      fn? fn() : null;
+    }
+    img.src = src;
+  }
+
+  function elementInViewport(el) {
+    var rect = el.getBoundingClientRect()
+
+    return (
+       rect.top    >= 0
+    && rect.left   >= 0
+    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    )
+  }
+
+    var images = new Array()
+      , query = $q('img.lazy')
+      , processScroll = function(){
+          for (var i = 0; i < images.length; i++) {
+            if (elementInViewport(images[i])) {
+              loadImage(images[i], function () {
+                images.splice(i, i);
+              });
+            }
+          };
+        }
+      ;
+    // Array.prototype.slice.call is not callable under our lovely IE8 
+    for (var i = 0; i < query.length; i++) {
+      images.push(query[i]);
+    };
+
+    processScroll();
+    addEventListener('scroll',processScroll);
+
+}(this);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  "use strict"
+
+  var links = document.querySelectorAll("a.scroll")
+  var i = links.length
+  var root = /firefox|trident/i.test(navigator.userAgent) ? document.documentElement : document.body
+  var easeInOutCubic = function(t, b, c, d) {
+    if ((t/=d/2) < 1) return c/2*t*t*t + b
+    return c/2*((t-=2)*t*t + 2) + b
+  }
+
+  while (i--) 
+    links.item(i).addEventListener("click", function(e) {
+      var startTime
+      var startPos = root.scrollTop
+      var endPos = document.getElementById(/[^#]+$/.exec(this.href)[0]).getBoundingClientRect().top
+      var maxScroll = root.scrollHeight - window.innerHeight
+      var scrollEndValue = startPos + endPos < maxScroll ? endPos : maxScroll - startPos
+      var duration = 900
+      var scroll = function(timestamp) {
+        startTime = startTime || timestamp
+        var elapsed = timestamp - startTime
+        var progress = easeInOutCubic(elapsed, startPos, scrollEndValue, duration)
+        root.scrollTop = progress
+        elapsed < duration && requestAnimationFrame(scroll)
+      }   
+      requestAnimationFrame(scroll)
+      e.preventDefault()
+    }) 
+})
