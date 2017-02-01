@@ -22,21 +22,21 @@ permalink: /portfolio/azion-technologies/
 			<!-- <p>This responsive website was developed the Google framework <a href="https://developers.google.com/web/tools/starter-kit/" target="_blank">Web Starter Kit</a> (SASS/JS/GULP).</p> -->
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/azion-website.jpg" alt="Azion Technologies -  Website" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/azion-website.jpg" alt="Azion Technologies -  Website" />
 				</div>
 			</div>
 			<p><a href="http://azion.com" target="_blank" class="button special">Go to Website</a></p>
 			<h2>Solutions Icons</h2>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/icones-azion.jpg" alt="Azion Technologies -  Icons" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/icones-azion.jpg" alt="Azion Technologies -  Icons" />
 				</div>
 			</div>
 			<p><a href="{{ site.url }}pdfs/Azion-Solutions-Icons.pdf" target="_blank" class="button special">View Icons</a></p>
 			<h2>Solutions Illustrations</h2>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/illustration-azion.jpg" alt="Azion Technologies -  Illustration" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/illustration-azion.jpg" alt="Azion Technologies -  Illustration" />
 				</div>
 			</div>
 			<p><a href="{{ site.url }}pdfs/Azion-Solutions-Illustrations.pdf" target="_blank" class="button special">View Illustrations</a></p>
