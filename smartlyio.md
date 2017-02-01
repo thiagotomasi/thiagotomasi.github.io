@@ -18,27 +18,27 @@ permalink: /portfolio/smartlyio/
 			<!-- <p>This project was made with Stylus, Cake and NodeJS</p> -->
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/smartlyio-home@2x.png" alt="" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/smartlyio-home@2x.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/smartlyio-search-init@2x.png" alt="" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/smartlyio-search-init@2x.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/smartlyio-search-searching@2x.png" alt="" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/smartlyio-search-searching@2x.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/smartlyio-search-init-selected@2x.png" alt="" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/smartlyio-search-init-selected@2x.jpg" alt="" />
 				</div>
 			</div>
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/smartlyio-article@2x.png" alt="" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/smartlyio-article@2x.jpg" alt="" />
 				</div>
 			</div>
 			<!-- <p><a href="http://www.grendenekids.com.br" target="_blank" class="button special">View Website</a></p> -->
