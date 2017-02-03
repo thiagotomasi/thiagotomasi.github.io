@@ -18,7 +18,7 @@ permalink: /portfolio/grendenekids/
 			<!-- <p>This project was made with Stylus, Cake and NodeJS</p> -->
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/grendenekids.jpg" alt="" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/grendenekids.jpg" alt="" />
 				</div>
 			</div>
 			<p><a href="http://www.grendenekids.com.br" target="_blank" class="button special">View Website</a></p>

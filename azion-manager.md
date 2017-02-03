@@ -22,8 +22,8 @@ permalink: /portfolio/azion-technologies-manager/
 			<!-- <h3>Screens</h3> -->
 			<div class="box alt">
 				<div class="row 50% uniform">
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/Azion-Style-Guide-1.jpg" alt="Azion Style Guide" /></span></div>
-					<div class="12u$"><span class="image fit"><img src="{{ site.url }}images/Azion-Style-Guide-2.jpg" alt="Azion Style Guide" /></span></div>
+					<img class="lazy" data-src="{{ site.url }}images/Azion-Style-Guide-1.jpg" alt="Azion Style Guide" />
+					<img class="lazy" data-src="{{ site.url }}images/Azion-Style-Guide-2.jpg" alt="Azion Style Guide" />s
 				</div>
 			</div>
 			<p><a href="{{ site.url }}pdfs/AzionStyleGuide-Website.pdf" target="_blank" class="button special">View Style Guide</a></p>
