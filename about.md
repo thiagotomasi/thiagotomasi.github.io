@@ -46,9 +46,9 @@ permalink: /about/
       <h2 class="title">Contact</h2>
     </div>
     <div class="conteiner-half-width">
-      <p>If you're looking for a professional product designer or just want to drink a beer, feel free to <a href="callto:+358 44 9440279">call me</a> or send a <a target="_blank" href="mailto:{{ site.email }}">email</a> and I'll get back to you as soon as possible.</p>
+      <p>If you're looking for a professional product designer or just want to drink a beer, feel free to <a href="callto:+358 40 5777664">call me</a> or send a <a target="_blank" href="mailto:{{ site.email }}">email</a> and I'll get back to you as soon as possible.</p>
       <p><strong>Email:</strong> <a target="_blank" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
-      <strong>Phone:</strong> +<a href="callto:+358 44 9440279">358 44 9440279</a><br />
+      <strong>Phone:</strong> +<a href="callto:+358 40 5777664">358 40 5777664</a><br />
       <strong>Helsinki, Finland</strong></p>
     </div> 
   </div>
