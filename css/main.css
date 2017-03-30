@@ -434,6 +434,9 @@ ol {
     .menu.menu-social-media a .darker {
       display: none; }
 
+.content .menu-social-media {
+  display: block; }
+
 .lighter .menu.main-menu a {
   color: #000; }
 

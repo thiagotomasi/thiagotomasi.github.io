@@ -60,7 +60,7 @@
 			display: block;
 	    }
 
-		&::after {
+	    &::after {
 			content: "";
 			position: absolute;
 			bottom: -10px;
@@ -94,6 +94,12 @@
 				display: none;
 			}
 		}
+	}
+}
+
+.content {
+	.menu-social-media {
+		display: block;
 	}
 }
 
