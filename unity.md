@@ -69,4 +69,8 @@ permalink: /portfolio/unity/
 			<!-- <p><a href="http://www.grendenekids.com.br" target="_blank" class="button special">View Website</a></p> -->
 		</div>
 	</section>
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/">Back to portifolio</a>
+		<a class="nav nav-footer-main" href="/portfolio/smartlyio/">Smartly.io project</a>
+	</nav>
 </main>

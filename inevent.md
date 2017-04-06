@@ -36,5 +36,8 @@ permalink: /portfolio/inevent/
 			</div>
 		</div>
 	</section>
-
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/findhotel/">Find Hotel project</a>
+		<a class="nav nav-footer-main" href="/portfolio/azion-technologies-manager/">Azion Manager project</a>
+	</nav>
 </main>

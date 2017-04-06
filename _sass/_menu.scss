@@ -128,3 +128,28 @@
 		}
 	}
 }
+
+.nav-footer {
+	font-size: 0;
+
+	.nav {
+		width: 50%;
+		display: inline-block;
+		text-align: center;
+		padding: 25px;
+		box-sizing: border-box;
+		font-size: $base-font-size;
+
+		&::after {
+			display: none;
+		}
+	}
+	.nav-footer-main {
+		background-color: $base-color;
+		color: $bright-color;
+	}
+	.nav-footer-auxiliar {
+		background-color: $bright-color;
+		color: $base-color;
+	}
+}

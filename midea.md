@@ -22,4 +22,8 @@ permalink: /portfolio/midea/
 			</div>
 		</div>
 	</section>
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/moinhos-de-vento-hospital/">Moinhos de Vento Hospital project</a>
+		<a class="nav nav-footer-main" href="/portfolio//">Back to portifolio</a>
+	</nav>
 </main>

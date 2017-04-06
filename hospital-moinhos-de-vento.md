@@ -29,4 +29,8 @@ permalink: /portfolio/moinhos-de-vento-hospital/
 			</div>
 		</div>
 	</section>
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/grendenekids/">Grendenekids project</a>
+		<a class="nav nav-footer-main" href="/portfolio/midea/">Midea project</a>
+	</nav>
 </main>

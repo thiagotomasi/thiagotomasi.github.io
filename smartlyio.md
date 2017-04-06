@@ -44,4 +44,8 @@ permalink: /portfolio/smartlyio/
 			<!-- <p><a href="http://www.grendenekids.com.br" target="_blank" class="button special">View Website</a></p> -->
 		</div>
 	</section>
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/unity/">Unity project</a>
+		<a class="nav nav-footer-main" href="/portfolio/findhotel/">Find Hotel project</a>
+	</nav>
 </main>

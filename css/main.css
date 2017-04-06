@@ -451,4 +451,23 @@ ol {
 .lighter .menu.menu-social-media a .darker {
   display: block; }
 
+.nav-footer {
+  font-size: 0; }
+  .nav-footer .nav {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 25px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 16px; }
+    .nav-footer .nav::after {
+      display: none; }
+  .nav-footer .nav-footer-main {
+    background-color: #111;
+    color: #fff; }
+  .nav-footer .nav-footer-auxiliar {
+    background-color: #fff;
+    color: #111; }
+
 /*# sourceMappingURL=main.css.map */

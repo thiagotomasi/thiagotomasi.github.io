@@ -36,5 +36,8 @@ permalink: /portfolio/azion-technologies-manager/
 			<p><a href="{{ site.url }}pdfs/AzionStyleGuide-Elements.pdf" target="_blank" class="button special">View Elements</a></p>
 		</div>
 	</section>
-
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/inevent/">InEvent Apps project</a>
+		<a class="nav nav-footer-main" href="/portfolio/azion-technologies/">Azion Technologies project</a>
+	</nav>
 </main>

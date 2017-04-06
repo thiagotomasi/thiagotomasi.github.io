@@ -24,4 +24,8 @@ permalink: /portfolio/grendenekids/
 			<p><a href="http://www.grendenekids.com.br" target="_blank" class="button special">View Website</a></p>
 		</div>
 	</section>
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/grendenekids-games/">Grendenekids Games project</a>
+		<a class="nav nav-footer-main" href="/portfolio/moinhos-de-vento-hospital/">Moinhos de Vento Hospital project</a>
+	</nav>
 </main>

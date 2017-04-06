@@ -42,5 +42,8 @@ permalink: /portfolio/azion-technologies/
 			<p><a href="{{ site.url }}pdfs/Azion-Solutions-Illustrations.pdf" target="_blank" class="button special">View Illustrations</a></p>
 		</div>
 	</section>
-
+	<nav class="nav-footer">
+		<a class="nav nav-footer-auxiliar" href="/portfolio/azion-technologies-manager/">Azion Manager project</a>
+		<a class="nav nav-footer-main" href="/portfolio/grendenekids-games/">Grendenekids Games project</a>
+	</nav>
 </main>
