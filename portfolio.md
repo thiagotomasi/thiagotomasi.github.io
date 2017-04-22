@@ -70,21 +70,7 @@ permalink: /portfolio/
         <h2 class="project-title">Grendenekids</h2>
         <p>Grendene Kids is a market leader with approximately 30 lines focused on the baby and children segment. Under the umbrella of this brand products are sold through licensing agreements with artists, cartoon characters.</p>
         <!-- <p>UI Design | Front-End</p> -->
-        <a href="/portfolio/grendenekids/">See more details</a>
-      </div>
-      <div class="project">
-        <a href="/portfolio/moinhos-de-vento-hospital/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/hmv-mockup.png" alt="Hospital Moinhos de Vento" /></a>
-        <h2 class="project-title">Moinhos de Vento Hospital</h2>
-        <p>Opened on October 2, 1927, the Moinhos de Vento Hospital combines tradition and innovation along its trajectory. This apparent paradox is a perfect equation when we analyze the past and we realize that, in fact, the new has always been part of the history of the Institution.</p>
-        <!-- <p>UX Design | UI Design</p> -->
-        <a href="/portfolio/moinhos-de-vento-hospital/">See more details</a>
-      </div>
-      <div class="project">
-        <a href="/portfolio/midea/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/midea-mockup.png" alt="Midea" /></a>
-        <h2 class="project-title">Midea</h2>
-        <p>Founded in 1968 in China, Midea, SPLIT largest manufacturer of air conditioners, is now one of the largest private companies in the world , with over 100,000 employees in several countries. In addition , it has a research and development area with more than 1,000 engineers.</p>
-        <!-- <p>UX Design | UI Design</p> -->
-        <a href="/portfolio/midea/">See more details</a>
+        <a href="http://www.grendenekids.com.br" target="_blank">Check the website</a>
       </div>
     </div>
   </section>
