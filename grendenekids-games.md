@@ -36,7 +36,7 @@ permalink: /portfolio/grendenekids-games/
 	</section>
 	<nav class="nav-footer">
 		<!-- <a class="nav nav-footer-auxiliar" href="/portfolio/azion-technologies/">Azion Technologies project</a> -->
-		<a class="nav nav-footer-main" href="/portfolio/inevent/">Inevent project</a>
+		<a class="nav nav-footer-auxiliar" href="/portfolio/inevent/">Inevent project</a>
 		<a class="nav nav-footer-main" href="/portfolio/grendenekids/">Grendenekids project</a>
 	</nav>
 </main>
