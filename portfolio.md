@@ -13,7 +13,7 @@ permalink: /portfolio/
   </section>
   <section class="content">
     <div class="conteiner">
-      <div class="project">
+      <!-- <div class="project">
         <a href="/portfolio/crf-health/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/unity-mockup.png" alt="CRF Health" /></a>
         <h2 class="project-title">CRF Health</h2>
         <p>As a leader in the industry of eCOA technology solutions, CRF Health empowers you to collect data seamlessly, promote higher compliance and more reliable reporting to clinic trials.</p>
@@ -24,7 +24,7 @@ permalink: /portfolio/
         <h2 class="project-title">Sportacam</h2>
         <p>Sportacam is proud to be the world’s first social media where you can talk to people face-to-face, trough camment®, comment with camera.</p>
         <a href="/portfolio/sportacam/">See more details</a>
-      </div>
+      </div> -->
       <div class="project">
         <a href="/portfolio/unity/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/unity-mockup.png" alt="Unity" /></a>
         <h2 class="project-title">Unity</h2>
