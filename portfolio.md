@@ -50,7 +50,7 @@ permalink: /portfolio/
         <p>InEvent is a Brazilian company that provides service to events through a web and mobile software connecting organizers, sponsors and participants before, during and after the event.</p>
         <a href="/portfolio/inevent/">See more details</a>
       </div>
-      <!-- <div class="project">
+      <div class="project">
         <a href="/portfolio/azion-technologies-manager/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/azion-manager-mockup.png" alt="Azion Technologies - Manager" /></a>
         <h2 class="project-title">Azion Technologies Manager</h2>
         <p>Founded in 2011, Azion leads the next-generation of CDN services, providing outstanding performance, unique integrated security and advanced analytics.</p>
@@ -63,7 +63,7 @@ permalink: /portfolio/
         <p>Founded in 2011, Azion leads the next-generation of CDN services, providing outstanding performance, unique integrated security and advanced analytics.</p>
         <p>Powered by the Azion Real Time Platform, their global high performance network employs exceptional edge-computing and in-memory technologies, delivering a comprehensive and powerful set of solutions.</p>
         <a href="/portfolio/azion-technologies/">See more details</a>
-      </div> -->
+      </div>
       <div class="project">
         <a href="/portfolio/grendenekids-games/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/grendenekids-games-mockup.png" alt="Grendene Kids - Games" /></a>
         <h2 class="project-title">Grendenekids Games</h2>
