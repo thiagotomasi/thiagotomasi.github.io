@@ -15,7 +15,7 @@ permalink: /about/
 
 <section class="content">
   <div class="conteiner">
-      <h2>I'm a product focused designer based in Helsinki, Finland. Currently working at <a href="http://www.crfhealth.com" target="_blank">CRF Health</a> as Senior Product Designer.</h2>
+      <h2>I'm a product focused designer based in Helsinki, Finland. Currently working at <a href="f-secure.com" target="_blank">F-Secure</a> as Lead Product Designer.</h2>
       <p>In my 8 years I worked at companies developing and designing services looking at the whole picture,<br />from the conception to validation, from business strategy to product emotions.</p>
       <p>I had the privilege to work with brands like <a href="http://www.coca-cola.com">Coca Cola</a>, <a href="https://www.deere.com">John Deere</a>, <a href="https://ghost.org/">Ghost.org</a>, <a href="http://www.stihl.com">Stihl</a>, <a href="https://www.interaction-design.org">Interaction Design Foundation</a>,<br /> <a href="http://www.bienal.org.br">Bienal</a> and <a href="http://www.clicrbs.com.br/rs/">RBS Group</a>. For clients in Brazil, Ireland, Denmark, USA, Belgium and Finland.</p>
       <!-- <p class="margin-double margin-double-bottom"><a href="{{ site.url }}pdfs/ThiagoTaroucoTomasi-CV.pdf" target="_blank" class="button">Download my CV</a></p> -->
@@ -50,7 +50,7 @@ permalink: /about/
       <p><strong>Email:</strong> <a target="_blank" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
       <strong>Phone:</strong> +<a href="callto:+358 40 5777664">358 40 5777664</a><br />
       <strong>Helsinki, Finland</strong></p>
-    </div> 
+    </div>
   </div>
 </section>
 
