@@ -13,7 +13,7 @@ permalink: /portfolio/
   </section>
   <section class="content">
     <div class="conteiner">
-      <!-- <div class="project">
+      <div class="project">
         <a href="/portfolio/crf-health/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/unity-mockup.png" alt="CRF Health" /></a>
         <h2 class="project-title">CRF Health</h2>
         <p>As a leader in the industry of eCOA technology solutions, CRF Health empowers you to collect data seamlessly, promote higher compliance and more reliable reporting to clinic trials.</p>
@@ -24,14 +24,14 @@ permalink: /portfolio/
         <h2 class="project-title">Sportacam</h2>
         <p>Sportacam is proud to be the world’s first social media where you can talk to people face-to-face, trough camment®, comment with camera.</p>
         <a href="/portfolio/sportacam/">See more details</a>
-      </div> -->
-      <div class="project">
+      </div>
+      <!-- <div class="project">
         <a href="/portfolio/unity/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/unity-mockup.png" alt="Unity" /></a>
         <h2 class="project-title">Unity</h2>
         <p>Unity is a cross-platform game engine developed by Unity Technologies and used to develop video games for PC, consoles, mobile devices and websites. First announced only for OS X, at Apple's Worldwide Developers Conference in 2005, it has since been extended to target 21 platforms.</p>
-        <!-- <p>InEvent is a Brazilian company that provides service to events through a web and mobile software connecting organizers, sponsors and participants before, during and after the event. UX Design | UI Design</p> -->
+        <!-- <p>InEvent is a Brazilian company that provides service to events through a web and mobile software connecting organizers, sponsors and participants before, during and after the event. UX Design | UI Design</p>
         <a href="/portfolio/unity/">See more details</a>
-      </div>
+      </div> -->
       <div class="project">
         <a href="/portfolio/smartlyio/" class="project-mockup"><img class="lazy" data-src="{{ site.url }}images/smartlyio-mockup.png" alt="Smartly.io" /></a>
         <h2 class="project-title">Smartly.io</h2>
